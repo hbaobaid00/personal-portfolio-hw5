@@ -6,6 +6,7 @@
     <title>Projects</title>
     <link rel="icon" type="image/png" href="/images/cse_icon.png">
     <script src="../js/site.js" defer></script>
+    <script src="../js/cards.js"></script>
     <link rel="stylesheet" href="../css/style.css">
 
     <style>
@@ -52,17 +53,46 @@
     </header>
 
     <main>
-        <section id="projects">
-
-        </section>
+        <div id="projects">
+            <project-card
+                title="Internship: AI Agent Log Analysis"
+                img="/images/projects/ai_logs.png"
+                alt="Screenshot of AI agent logs"
+                desc="Analyzed open-source models and extracted agent logging patterns during my SkillWorld internship."
+                link="project_details/agent_logging_project.html"
+            ></project-card>
+            <project-card
+                title="Peronsal Portfolio Website"
+                img="/images/projects/myPortfolio.png"
+                alt="Homepage preview of my UCSD themed site"
+                desc="This website itself! Built using semantic HTML, CSS variables, theming, and JavaScript components."
+                link="index.html"
+            ></project-card>
+            <project-card
+                title="Mapping Music to Mood"
+                img="/images/projects/CSE158_project/graph.png"
+                desc="A regression-based analysis exploring how musical attributes reflect cultural and economic behavior."
+                link="project_details/CSE158_project.html"
+            ></project-card>
+            <project-card
+                title="Custom Computer Graphics Renderer"
+                img="/images/projects/Computer_Graphics_outputs/donut.png"
+                desc="Extended a CPU-based graphics framework with rasterization, lighting, and Blender model rendering."
+                link="project_details/computer_graphics_project.html"
+            ></project-card>
+            <project-card 
+                title="My First Project"
+                img="/images/projects/VEX_project/robotics.jpg"
+                desc="How building a VEX robot in high school sparked my passion for computer science and technology."
+                link="project_details/my_first_project.html"
+            ></project-card>
+        </div>
 
         <my-hello-world></my-hello-world>
     </main>
-
     <noscript>
-        <p><strong>Note:</strong> This page works without JavaScript, but the enhanced version will appear on <code>form-with-js.html</code>.</p>
+        <p><strong>Note:</strong> This site works best with JavaScript enabled. Some features may not display correctly.</p>
     </noscript>
-
     <footer>
         <p>© 2025 Hisham Baobaid • Hosted on Netlify • Validated via W3C HTML Validator</p>
     </footer>

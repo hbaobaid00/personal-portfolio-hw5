@@ -36,6 +36,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="projects.html" aria-current="page">Projects</a></li>
+                <li><a href="crud.html">Projects (CRUD)</a></li>
                 <li><a href="resume.html">Resume</a></li>
             </ul>
         </nav>
@@ -53,8 +54,27 @@
     </header>
 
     <main>
+        <!-- <div class="button-container">
+            <button id="load-local">Load Local</button>
+            <button id="load-remote">Load Remote</button>
+        </div> -->
+
+        <div class="button-container">
+    
+            <div class="button-group">
+                <span class="button-label">Recent Projects:</span>
+                <button id="load-local">Load Local</button>
+                <button id="reset-data">Reset Local Data</button>
+            </div>
+
+            <div class="button-group">
+                <span class="button-label">Older Projects:</span>
+                <button id="load-remote">Load Remote</button>
+            </div>
+
+        </div>
         <div id="projects">
-            <project-card
+            <!-- <project-card
                 title="Internship: AI Agent Log Analysis"
                 img="/images/projects/ai_logs.png"
                 alt="Screenshot of AI agent logs"
@@ -85,7 +105,7 @@
                 img="/images/projects/VEX_project/robotics.jpg"
                 desc="How building a VEX robot in high school sparked my passion for computer science and technology."
                 link="project_details/my_first_project.html"
-            ></project-card>
+            ></project-card> -->
         </div>
 
         <my-hello-world></my-hello-world>

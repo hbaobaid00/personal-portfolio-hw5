@@ -87,4 +87,18 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Failed to load remote projects:", error);
         }
     });
+
+    const container = document.getElementById("projects");
+
+    container.addEventListener("click", (e) => {
+        const card = e.target.closest("project-card");
+        if (!card || !container.contains(card)) return;
+        const clickedLink = e.target.closest("a");
+        if (clickedLink) return;
+        const link = card.getAttribute("link");
+        if (link && link !== "#") {
+            window.open(link, "_blank");
+        }
+    });
+
 });

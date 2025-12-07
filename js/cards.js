@@ -61,7 +61,7 @@ class ProjectCard extends HTMLElement {
             this.getAttribute("title") || "Untitled Project";
 
         const img = this.shadowRoot.querySelector("img");
-        img.src = this.getAttribute("img") || "/images/placeholder.png";
+        img.src = this.getAttribute("img") || "https://www.ntaskmanager.com/wp-content/uploads/2020/02/What-is-a-Project-1-scaled.jpg";
         img.alt = this.getAttribute("alt") || "Project image";
 
         this.shadowRoot.querySelector("p").textContent =

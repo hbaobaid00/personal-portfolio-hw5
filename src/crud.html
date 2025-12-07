@@ -84,7 +84,7 @@
                 <label>Project Index (for updates):</label>
                 <input type="number" id="index" placeholder="Leave empty for create">
 
-                <div class="FormCenter">
+                <div class="button-group">
                     <button type="submit">Save Project</button>
                 </div>
             </form>
@@ -94,17 +94,31 @@
 
                 <label>Project Index:</label>
                 <input type="number" id="delete-index" required>
-
-                <button type="submit">Delete Project</button>
+                <div class="button-group">
+                    <button type="submit" id="delete-project">Delete Project</button>
+                </div>
             </form>
 
             <p id="info-output"></p>
             <p id="error-output"></p>
         </section>
 
-        <div id="projects">
-    
+        <div id="deleteModal" class="modal hidden">
+            <div class="modal-content">
+                <h3>Delete Project?</h3>
+
+                <project-card id="previewCard"></project-card>
+
+                <div class="modal-actions">
+                    <button id="cancelDelete" class="btn-secondary">Cancel</button>
+                    <button id="confirmDelete" class="btn-danger">Delete</button>
+                </div>
+            </div>
         </div>
+
+        <!-- <div id="projects">
+    
+        </div> -->
 
         <my-hello-world></my-hello-world>
     </main>
